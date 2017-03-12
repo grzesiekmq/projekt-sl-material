@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">  -->
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <!-- <link rel="stylesheet" href=".\css\jquery.mobile-1.4.2.css" type="text/css" /> -->
+    <link rel='stylesheet' href='.\fc\fullcalendar.css' type="text/css" />
+    <link rel="stylesheet" href=".\css\style.css" type="text/css" />
+    <link rel="stylesheet" href=".\css\materialize.css" type="text/css">
+    <script src=".\lib\jquery-2.1.4.min.js"></script>
+    <script src=".\lib\jquery.mobile-1.4.2.js"></script>
+    <script type="text/javascript" charset="utf-8" src=".\sl-material.js"></script>
+    <script src='.\lib\moment.min.js'></script>
+    <script src='.\fc\fullcalendar.js'></script>
+    <script>
+    document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</head>
+
+<body onload="init()">
+    <div id="one" class="pg">
+        <div id="hdr1">
+            <div class="ui-grid-a">
+                <h1><div class="ui-block-a"><img src=".\img\shopping_list.png"></div>
+        		<div class="ui-block-b">Lista zakupów</div></h1>
+            </div>
+            <nav>
+                <ul class="left">
+                    <li><a href="#one" id="a1" class="waves-effect waves-light btn" data-transition="flow">Lista zakupów</a></li>
+                    <li><a href="#two" id="a2" class="waves-effect waves-light btn" data-transition="flow">Historia</a></li>
+                    <li><a href="#three" id="a3" class="waves-effect waves-light btn" data-transition="flow">Kalendarz</a></li>
+                </ul>
+            </nav>
+            <br>
+        </div>
+        <div data-role="main" class="ui-content" align="center">
+            <p><span class="ui-icon-edit ui-btn-icon-notext inlineIcon"></span>Wprowadź produkt:</p>
+            <form class="ui-filterable">
+                <input type="text" id="produkt" data-clear-btn="true" data-lastval required>
+            </form>
+            <ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#produkt" id="mylist" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                <li data-name="bekon"><img src=".\img\bcn.png">bekon</li>
+                <li data-name="bułki"><img src=".\img\bulki.jpg">bułki</li>
+                <li data-name="chipsy"><img src=".\img\chipsy.jpg">chipsy</li>
+                <li data-name="chleb"><img src=".\img\chleb.png">chleb</li>
+                <li data-name="jaja"><img src=".\img\jaja.jpg">jaja</li>
+                <li data-name="kawa"><img src=".\img\kawa.jpg">kawa</li>
+                <li data-name="ketchup"><img src=".\img\ketchup.jpg">ketchup</li>
+                <li data-name="kiełbasa"><img src=".\img\kielbasa.jpg">kiełbasa</li>
+                <li data-name="masło"><img src=".\img\maslo.jpg">masło</li>
+                <li data-name="mleko"><img src=".\img\mleko.jpg">mleko</li>
+                <li data-name="musztarda"><img src=".\img\musztarda.jpeg">musztarda</li>
+                <li data-name="piwo"><img src=".\img\piwo.png">piwo</li>
+                <li data-name="płatki"><img src=".\img\platki.jpg">płatki</li>
+                <li data-name="sos czosnkowy"><img src=".\img\sos czosnkowy.jpg">sos czosnkowy</li>
+            </ul>
+            <button type="button" onclick="whichBtn(this)" id="add" class="ui-btn ui-icon-plus ui-btn-icon-left">Dodaj</button>
+            <button type="button" onclick="whichBtn(this)" id="load" class="ui-btn ui-icon-arrow-d ui-btn-icon-left">Wczytaj dodane produkty</button>
+            <br>
+            <div class="danger-zone">
+                <p><span class="ui-icon-alert ui-btn-icon-notext inlineIcon"></span>Niebezpieczna strefa!</p>
+                <button type="button" onclick="whichBtn(this)" id="rem" class="ui-btn ui-icon-minus ui-btn-icon-left">Usuń</button>
+                <br>
+            </div>
+            <br>
+            <ul data-role="listview" id="lv">Lista
+                <br>
+                <!-- <button type="button" id="sort" onclick="whichBtn(this)">Sortuj</button> -->
+            </ul>
+        </div>
+        <div data-role="footer" id="ftr1">
+            <h1>© GF</h1>
+        </div>
+    </div>
+    <div id="two" class="pg">
+        <div data-role="header" id="hdr2">
+            <h1>Historia</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#one" id="a1" class="ui-btn ui-icon-home ui-btn-icon-top" data-transition="flow">Lista zakupów</a></li>
+                    <li><a href="#two" id="a2" class="ui-btn ui-icon-clock ui-btn-icon-top" data-transition="flow">Historia</a></li>
+                    <li><a href="#three" id="a3" class="ui-btn ui-icon-calendar ui-btn-icon-top" data-transition="flow">Kalendarz</a></li>
+                </ul>
+            </div>
+            <br>
+        </div>
+        <div data-role="main" class="ui-content" align="center">
+            <div class="danger-zone">
+                <p><span class="ui-icon-alert ui-btn-icon-notext inlineIcon"></span>Niebezpieczna strefa!</p>
+                <button type="button" id="remH" onclick="whichBtn(this)" class="ui-btn ui-icon-minus ui-btn-icon-left">Usuń historię</button>
+            </div>
+            <br>
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><b>produkt</b></div>
+                <div class="ui-block-b"><b>data</b></div>
+            </div>
+            <br>
+            <ul data-role="listview" id="lvhistory"></ul>
+        </div>
+        <div data-role="footer" id="ftr2">
+            <h1>© GF</h1>
+        </div>
+    </div>
+    <div id="three" class="pg">
+        <div data-role="header" id="hdr3">
+            <h1>Kalendarz</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#one" id="a1" class="ui-btn ui-icon-home ui-btn-icon-top" data-transition="flow">Lista zakupów</a></li>
+                    <li><a href="#two" id="a2" class="ui-btn ui-icon-clock ui-btn-icon-top" data-transition="flow">Historia</a></li>
+                    <li><a href="#three" id="a3" class="ui-btn ui-icon-calendar ui-btn-icon-top" data-transition="flow">Kalendarz</a></li>
+                </ul>
+            </div>
+            <br>
+        </div>
+        <div data-role="main" class="ui-content" align="center">
+            <div id="calendar"></div>
+        </div>
+        <div data-role="footer" id="ftr3">
+            <h1>© GF</h1>
+        </div>
+    </div>
+</body>
+
+</html>

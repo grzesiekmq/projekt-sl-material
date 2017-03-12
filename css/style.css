@@ -1,0 +1,81 @@
+.fc-time {
+    display: none;
+}
+
+.fc-title {
+    color: white;
+}
+
+#add {
+    background: mediumseagreen;
+}
+
+#load {
+    background: blue;
+}
+
+#rem,
+#remH {
+    background: orangered;
+}
+
+#produkt,
+.ui-block-a,
+.ui-block-b,
+.inlineIcon {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+#a1,
+#a2,
+#a3,
+#a4 {
+    color: #005599;
+    font-weight: 900;
+}
+
+#produkt,
+#a1,
+#a2,
+#a3,
+#a4 {
+    font-size: small;
+}
+
+#lv {
+    background: ;
+}
+
+.danger-zone {
+    height: 100px;
+    width: auto;
+    border: 3px solid red;
+    background: red;
+}
+
+.pg {
+    background-color: lightskyblue;
+}
+
+#hdr1,
+#hdr2,
+#hdr3,
+#hdr4 {
+    background: #0088BB;
+    font-size: large;
+}
+
+.ui-content {
+    background: #22AADD;
+}
+
+#ftr1,
+#ftr2,
+#ftr3,
+#ftr4 {
+    background: #005599;
+    font-size: large;
+}

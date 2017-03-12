@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="shoppinglist" versionCode="1" version="3.0.0">
+    <name>$hopping list</name>
+    <description>Lista zakupów + analiza koszykowa</description>
+    <author>Grzegorz Futa</author>
+    <gap:platform name="android">
+        <icon src="shopping_list.png" width="200" height="200" />
+    </gap:platform>
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <gap:plugin name="org.apache.cordova.dialogs" spec="0.3.0" source="pgb" />
+    <gap:plugin name="org.apache.cordova.splashscreen" spec="1.0.0" source="pgb" />
+    <gap:plugin name="cordova-plugin-x-toast" source="npm" />
+    <preference name="android-build-tool" value="gradle" />
+    <gap:splash src="splash.png" gap:platform="android" gap:qualifier="ldpi" width="500" height="500" />
+    <gap:splash src="splash.png" />
+</widget>
