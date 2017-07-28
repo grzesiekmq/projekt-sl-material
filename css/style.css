@@ -1,10 +1,21 @@
-.fc-time {
-    display: none;
+body,
+#one .card,
+#one .card-reveal {
+    background-color: #6eeee9
 }
 
-.fc-title {
-    color: white;
+
+
+.cl {
+    margin-left: 10em;
 }
+
+.t {
+    margin-left: -0.5em;
+    color: #01579b
+}
+
+.h {}
 
 #add {
     background: mediumseagreen;
@@ -19,10 +30,7 @@
     background: orangered;
 }
 
-#produkt,
-.ui-block-a,
-.ui-block-b,
-.inlineIcon {
+#produkt {
     display: inline-block;
     position: relative;
     vertical-align: middle;
@@ -51,26 +59,18 @@
 
 .danger-zone {
     height: 100px;
-    width: auto;
-    border: 3px solid red;
-    background: red;
 }
 
-.pg {
-    background-color: lightskyblue;
-}
+
 
 #hdr1,
-#hdr2,
 #hdr3,
 #hdr4 {
     background: #0088BB;
     font-size: large;
 }
 
-.ui-content {
-    background: #22AADD;
-}
+
 
 #ftr1,
 #ftr2,
