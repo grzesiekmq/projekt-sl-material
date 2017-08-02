@@ -4,14 +4,16 @@ body,
     background-color: #6eeee9
 }
 
+.autocomplete-content.dropdown-content {
+    position: absolute;
+    z-index: 1
+}
 
-
-.cl {
+#c {
     margin-left: 10em;
 }
 
 .t {
-    margin-left: -0.5em;
     color: #01579b
 }
 
@@ -21,8 +23,8 @@ body,
     background: mediumseagreen;
 }
 
-#load {
-    background: blue;
+#load2 {
+    height: 5em
 }
 
 #rem,

@@ -1,40 +1,39 @@
 $(function() {
-    
- $('.autocomplete').autocomplete({
 
-    data: {
+    $('.autocomplete').autocomplete({
 
-        "bekon": "./img/bcn.png",
+        data: {
 
-        "bułki": "./img/bulki.jpg",
+            "bekon": "./img/bcn.png",
 
-        "chipsy": "./img/chipsy.jpg",
+            "bułki": "./img/bulki.jpg",
 
-        "chleb": "./img/chleb.png",
+            "chipsy": "./img/chipsy.jpg",
 
-        "jaja": "./img/jaja.jpg",
+            "chleb": "./img/chleb.png",
 
-        "kawa": "./img/kawa.jpg",
+            "jaja": "./img/jaja.jpg",
 
-        "ketchup": "./img/ketchup.jpg",
+            "kawa": "./img/kawa.jpg",
 
-        "kiełbasa": "./img/kielbasa.jpg",
+            "ketchup": "./img/ketchup.jpg",
 
-        "masło": "./img/maslo.jpg",
+            "kiełbasa": "./img/kielbasa.jpg",
 
-        "mleko": "./img/mleko.jpg",
+            "masło": "./img/maslo.jpg",
 
-        "musztarda": "./img/musztarda.jpeg",
+            "mleko": "./img/mleko.jpg",
 
-        "piwo": "./img/piwo.png",
+            "musztarda": "./img/musztarda.jpeg",
 
-        "płatki": "./img/platki.jpg",
+            "piwo": "./img/piwo.png",
 
-        "sos czosnkowy": "./img/sos czosnkowy.jpg"
+            "płatki": "./img/platki.jpg",
 
-    }
+            "sos czosnkowy": "./img/sos czosnkowy.jpg"
 
+        }
+
+    });
+    $('.autocomplete-content.dropdown-content').css({ 'position': 'absolute', 'z-index': 2 });
 });
-});
-
-
