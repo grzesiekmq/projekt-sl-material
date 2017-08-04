@@ -11,11 +11,11 @@
     <link rel="stylesheet" href=".\css\materialize.css" type="text/css">
     <link rel="stylesheet" href=".\fonts\material.css" type="text/css">
     <script src=".\lib\materialize.js"></script>
-    <script type="text/javascript" charset="utf-8" src=".\sl-material.js"></script>
+    <script type="text/javascript" charset="utf-8" src=".\lib\sl-material.js"></script>
     <script src=".\autocomplete.js"></script>
 </head>
 
-<body onload="init()">
+<body>
     <!-- One -->
     <div id="one">
         <header>
@@ -40,7 +40,8 @@
                         <i class="material-icons prefix">search</i>
                         <input type="search" id="produkt" required class="red lighten-1 autocomplete">
                         <label class="label-icon" for="produkt">
-                            <i class="material-icons" onclick="whichBtn(this)" id="c">close</i></div>
+                            <i class="material-icons" onclick="whichBtn(this)" id="c">close</i>
+                    </div>
                 </form>
             </div>
         </nav>

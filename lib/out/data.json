@@ -1,0 +1,996 @@
+{
+    "project": {},
+    "files": {
+        "materialize.js": {
+            "name": "materialize.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "sl-material.js": {
+            "name": "sl-material.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {},
+    "elements": {},
+    "classitems": [
+        {
+            "file": "materialize.js",
+            "line": 332,
+            "description": "Escapes hash from special characters",
+            "params": [
+                {
+                    "name": "hash",
+                    "description": "String returned from this.hash",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 355,
+            "description": "Get time in ms",
+            "license": "https://raw.github.com/jashkenas/underscore/master/LICENSE",
+            "type": "{function}",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 366,
+            "description": "Returns a function, that, when invoked, will only be triggered at most once\nduring a given window of time. Normally, the throttled function will run\nas much as it can, without ever going more than once per `wait` duration;\nbut if you'd like to disable the execution on the leading edge, pass\n`{leading: false}`. To disable execution on the trailing edge, ditto.",
+            "license": "https://raw.github.com/jashkenas/underscore/master/LICENSE",
+            "params": [
+                {
+                    "name": "func",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "wait",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "options",
+                    "description": "",
+                    "type": "Object="
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Function"
+            },
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 443,
+            "description": "Helper Functions",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 522,
+            "description": "Check if object is children of panel header",
+            "params": [
+                {
+                    "name": "object",
+                    "description": "Jquery object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "true if it is children",
+                "type": "Boolean"
+            },
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 534,
+            "description": "Get panel header from a children element",
+            "params": [
+                {
+                    "name": "object",
+                    "description": "Jquery object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "panel header object",
+                "type": "Object"
+            },
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 544,
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2057,
+            "description": "Disable mousedown event for 500ms during and after touch",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2089,
+            "description": "Delegated click handler for .waves-effect element.\nreturns null when .waves-effect element not in \"click tree\"",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2115,
+            "description": "Bubble the click and show effect if .waves-effect elem was found",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2151,
+            "description": "Attach Waves to an input element (or any element which doesn't\nbubble mouseup/mousedown events).\n  Intended to be used with dynamically loaded forms/inputs, or\nwhere the user doesn't want a delegated click handler.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2718,
+            "description": "Find elements that are within the boundary",
+            "params": [
+                {
+                    "name": "top",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "right",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "bottom",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "left",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "A collection of elements",
+                "type": "JQuery"
+            },
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2750,
+            "description": "Called when the user scrolls the window",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2791,
+            "description": "Called when window is resized",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2799,
+            "description": "Enables ScrollSpy using a selector",
+            "params": [
+                {
+                    "name": "selector",
+                    "description": "The elements collection, or a selector",
+                    "type": "JQuery|string"
+                },
+                {
+                    "name": "options",
+                    "description": "Optional.\n       throttle : number -> scrollspy throttling. Default: 100 ms\n       offsetTop : number -> offset from top. Default: 0\n       offsetRight : number -> offset from right. Default: 0\n       offsetBottom : number -> offset from bottom. Default: 0\n       offsetLeft : number -> offset from left. Default: 0",
+                    "type": "Object="
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "JQuery"
+            },
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2895,
+            "description": "Listen for window resize events",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Optional. Set { throttle: number } to change throttling. Default: 100 ms",
+                    "type": "Object="
+                }
+            ],
+            "return": {
+                "description": "$(window)",
+                "type": "JQuery"
+            },
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 2908,
+            "description": "Enables ScrollSpy on a collection of elements\ne.g. $('.scrollSpy').scrollSpy()",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Optional.\n\t\t\t\t\t\t\t\t\t\t\tthrottle : number -> scrollspy throttling. Default: 100 ms\n\t\t\t\t\t\t\t\t\t\t\toffsetTop : number -> offset from top. Default: 0\n\t\t\t\t\t\t\t\t\t\t\toffsetRight : number -> offset from right. Default: 0\n\t\t\t\t\t\t\t\t\t\t\toffsetBottom : number -> offset from bottom. Default: 0\n\t\t\t\t\t\t\t\t\t\t\toffsetLeft : number -> offset from left. Default: 0",
+                    "type": "Object="
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "JQuery"
+            },
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 3102,
+            "description": "Range Input  *",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 3203,
+            "description": "Auto complete plugin  *",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 3370,
+            "description": "Select Plugin  *",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 3569,
+            "description": "Make option as selected and scroll to selected position",
+            "params": [
+                {
+                    "name": "collection",
+                    "description": "Select options jQuery element",
+                    "type": "JQuery"
+                },
+                {
+                    "name": "newOption",
+                    "description": "element of the new option",
+                    "type": "Element"
+                },
+                {
+                    "name": "firstActivation",
+                    "description": "If on first activation of select",
+                    "type": "Boolean"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 4542,
+            "description": "Transform FAB into toolbar",
+            "params": [
+                {
+                    "name": "object",
+                    "description": "jQuery object",
+                    "type": "Object"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 4630,
+            "description": "Transform toolbar back into FAB",
+            "params": [
+                {
+                    "name": "object",
+                    "description": "jQuery object",
+                    "type": "Object"
+                }
+            ],
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 4953,
+            "description": "The picker constructor that creates a blank picker.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 4998,
+            "description": "Initialize everything",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5081,
+            "description": "Render a new picker",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5095,
+            "description": "Destroy everything",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5136,
+            "description": "Open up the picker",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5246,
+            "description": "Close the picker",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5298,
+            "description": "Clear the values",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5306,
+            "description": "Set something",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5354,
+            "description": "Get something",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5397,
+            "description": "Bind events on the things.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5437,
+            "description": "Unbind events on the things.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5453,
+            "description": "Fire off method events.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5472,
+            "description": "Wrap the picker holder components together.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5511,
+            "description": "Prepare the input element with all bindings.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5560,
+            "description": "Prepare the root picker element with all bindings.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5661,
+            "description": "Prepare the hidden input element along with all bindings.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5763,
+            "description": "The default classes and prefix to use for the HTML classes.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5789,
+            "description": "Check if the default theme is being used.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5812,
+            "description": "Get the width of the browser’s scrollbar.\nTaken from: https://github.com/VodkaBears/Remodal/blob/master/src/jquery.remodal.js",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5846,
+            "description": "PickerConstructor helper methods.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5851,
+            "description": "Create a group of nodes. Expects:\n`\n       {\n           min:    {Integer},\n           max:    {Integer},\n           i:      {Integer},\n           node:   {String},\n           item:   {Function}\n       }\n`",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5896,
+            "description": "Create a dom node string",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5918,
+            "description": "Lead numbers below 10 with a zero.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5926,
+            "description": "Trigger a function otherwise return the value.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5934,
+            "description": "If the second character is a digit, length is 2 otherwise 1.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5942,
+            "description": "Tell if something is a date object.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5950,
+            "description": "Tell if something is an integer.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5958,
+            "description": "Create ARIA attribute strings.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 5966,
+            "description": "Extend the picker with a component and defaults.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6070,
+            "description": "Globals and constants",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6079,
+            "description": "The date picker constructor",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6195,
+            "description": "Set a datepicker item object.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6239,
+            "description": "Get a datepicker item object.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6247,
+            "description": "Create a picker date object.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6298,
+            "description": "Create a range limit object using an array, date object,\nliteral “true”, or integer relative to another time.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6335,
+            "description": "Check if a date unit falls within a date range object.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6344,
+            "description": "Check if two date range objects overlap.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6360,
+            "description": "Get the date today.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6372,
+            "description": "Navigate to next/prev month.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6429,
+            "description": "Normalize a date by setting the hours to midnight.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6438,
+            "description": "Measure the range of dates.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6464,
+            "description": "Create a viewset object based on navigation.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6472,
+            "description": "Validate a date as enabled and shift if needed.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6595,
+            "description": "Check if a date is disabled.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6637,
+            "description": "Parse a string into a usable type.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6686,
+            "description": "Various formats to display the object in.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6794,
+            "description": "Check if two date units are the exact.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6826,
+            "description": "Check if two date units overlap.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6853,
+            "description": "Flip the “enabled” state.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6862,
+            "description": "Mark a collection of dates as “disabled”.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 6921,
+            "description": "Mark a collection of dates as “enabled”.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 7013,
+            "description": "Create a string for the nodes in the picker.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 7387,
+            "description": "The date picker defaults.",
+            "class": ""
+        },
+        {
+            "file": "materialize.js",
+            "line": 7470,
+            "description": "Extend the picker to add the date picker.",
+            "class": ""
+        },
+        {
+            "file": "sl-material.js",
+            "line": 21,
+            "description": "Który przycisk",
+            "params": [
+                {
+                    "name": "buttonElement",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": ""
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " materialize.js:332"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " materialize.js:355"
+        },
+        {
+            "message": "unknown tag: license",
+            "line": " materialize.js:366"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " materialize.js:366"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " materialize.js:2799"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " materialize.js:2895"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " materialize.js:2908"
+        },
+        {
+            "message": "Missing item type\nEscapes hash from special characters",
+            "line": " materialize.js:332"
+        },
+        {
+            "message": "Missing item type\nGet time in ms",
+            "line": " materialize.js:355"
+        },
+        {
+            "message": "Missing item type\nReturns a function, that, when invoked, will only be triggered at most once\nduring a given window of time. Normally, the throttled function will run\nas much as it can, without ever going more than once per `wait` duration;\nbut if you'd like to disable the execution on the leading edge, pass\n`{leading: false}`. To disable execution on the trailing edge, ditto.",
+            "line": " materialize.js:366"
+        },
+        {
+            "message": "Missing item type\nHelper Functions",
+            "line": " materialize.js:443"
+        },
+        {
+            "message": "Missing item type\nCheck if object is children of panel header",
+            "line": " materialize.js:522"
+        },
+        {
+            "message": "Missing item type\nGet panel header from a children element",
+            "line": " materialize.js:534"
+        },
+        {
+            "message": "Missing item type",
+            "line": " materialize.js:544"
+        },
+        {
+            "message": "Missing item type\nDisable mousedown event for 500ms during and after touch",
+            "line": " materialize.js:2057"
+        },
+        {
+            "message": "Missing item type\nDelegated click handler for .waves-effect element.\nreturns null when .waves-effect element not in \"click tree\"",
+            "line": " materialize.js:2089"
+        },
+        {
+            "message": "Missing item type\nBubble the click and show effect if .waves-effect elem was found",
+            "line": " materialize.js:2115"
+        },
+        {
+            "message": "Missing item type\nAttach Waves to an input element (or any element which doesn't\nbubble mouseup/mousedown events).\n  Intended to be used with dynamically loaded forms/inputs, or\nwhere the user doesn't want a delegated click handler.",
+            "line": " materialize.js:2151"
+        },
+        {
+            "message": "Missing item type\nFind elements that are within the boundary",
+            "line": " materialize.js:2718"
+        },
+        {
+            "message": "Missing item type\nCalled when the user scrolls the window",
+            "line": " materialize.js:2750"
+        },
+        {
+            "message": "Missing item type\nCalled when window is resized",
+            "line": " materialize.js:2791"
+        },
+        {
+            "message": "Missing item type\nEnables ScrollSpy using a selector",
+            "line": " materialize.js:2799"
+        },
+        {
+            "message": "Missing item type\nListen for window resize events",
+            "line": " materialize.js:2895"
+        },
+        {
+            "message": "Missing item type\nEnables ScrollSpy on a collection of elements\ne.g. $('.scrollSpy').scrollSpy()",
+            "line": " materialize.js:2908"
+        },
+        {
+            "message": "Missing item type\nRange Input  *",
+            "line": " materialize.js:3102"
+        },
+        {
+            "message": "Missing item type\nAuto complete plugin  *",
+            "line": " materialize.js:3203"
+        },
+        {
+            "message": "Missing item type\nSelect Plugin  *",
+            "line": " materialize.js:3370"
+        },
+        {
+            "message": "Missing item type\nMake option as selected and scroll to selected position",
+            "line": " materialize.js:3569"
+        },
+        {
+            "message": "Missing item type\nTransform FAB into toolbar",
+            "line": " materialize.js:4542"
+        },
+        {
+            "message": "Missing item type\nTransform toolbar back into FAB",
+            "line": " materialize.js:4630"
+        },
+        {
+            "message": "Missing item type\nThe picker constructor that creates a blank picker.",
+            "line": " materialize.js:4953"
+        },
+        {
+            "message": "Missing item type\nInitialize everything",
+            "line": " materialize.js:4998"
+        },
+        {
+            "message": "Missing item type\nRender a new picker",
+            "line": " materialize.js:5081"
+        },
+        {
+            "message": "Missing item type\nDestroy everything",
+            "line": " materialize.js:5095"
+        },
+        {
+            "message": "Missing item type\nOpen up the picker",
+            "line": " materialize.js:5136"
+        },
+        {
+            "message": "Missing item type\nClose the picker",
+            "line": " materialize.js:5246"
+        },
+        {
+            "message": "Missing item type\nClear the values",
+            "line": " materialize.js:5298"
+        },
+        {
+            "message": "Missing item type\nSet something",
+            "line": " materialize.js:5306"
+        },
+        {
+            "message": "Missing item type\nGet something",
+            "line": " materialize.js:5354"
+        },
+        {
+            "message": "Missing item type\nBind events on the things.",
+            "line": " materialize.js:5397"
+        },
+        {
+            "message": "Missing item type\nUnbind events on the things.",
+            "line": " materialize.js:5437"
+        },
+        {
+            "message": "Missing item type\nFire off method events.",
+            "line": " materialize.js:5453"
+        },
+        {
+            "message": "Missing item type\nWrap the picker holder components together.",
+            "line": " materialize.js:5472"
+        },
+        {
+            "message": "Missing item type\nPrepare the input element with all bindings.",
+            "line": " materialize.js:5511"
+        },
+        {
+            "message": "Missing item type\nPrepare the root picker element with all bindings.",
+            "line": " materialize.js:5560"
+        },
+        {
+            "message": "Missing item type\nPrepare the hidden input element along with all bindings.",
+            "line": " materialize.js:5661"
+        },
+        {
+            "message": "Missing item type\nThe default classes and prefix to use for the HTML classes.",
+            "line": " materialize.js:5763"
+        },
+        {
+            "message": "Missing item type\nCheck if the default theme is being used.",
+            "line": " materialize.js:5789"
+        },
+        {
+            "message": "Missing item type\nGet the width of the browser’s scrollbar.\nTaken from: https://github.com/VodkaBears/Remodal/blob/master/src/jquery.remodal.js",
+            "line": " materialize.js:5812"
+        },
+        {
+            "message": "Missing item type\nPickerConstructor helper methods.",
+            "line": " materialize.js:5846"
+        },
+        {
+            "message": "Missing item type\nCreate a group of nodes. Expects:\n`\n       {\n           min:    {Integer},\n           max:    {Integer},\n           i:      {Integer},\n           node:   {String},\n           item:   {Function}\n       }\n`",
+            "line": " materialize.js:5851"
+        },
+        {
+            "message": "Missing item type\nCreate a dom node string",
+            "line": " materialize.js:5896"
+        },
+        {
+            "message": "Missing item type\nLead numbers below 10 with a zero.",
+            "line": " materialize.js:5918"
+        },
+        {
+            "message": "Missing item type\nTrigger a function otherwise return the value.",
+            "line": " materialize.js:5926"
+        },
+        {
+            "message": "Missing item type\nIf the second character is a digit, length is 2 otherwise 1.",
+            "line": " materialize.js:5934"
+        },
+        {
+            "message": "Missing item type\nTell if something is a date object.",
+            "line": " materialize.js:5942"
+        },
+        {
+            "message": "Missing item type\nTell if something is an integer.",
+            "line": " materialize.js:5950"
+        },
+        {
+            "message": "Missing item type\nCreate ARIA attribute strings.",
+            "line": " materialize.js:5958"
+        },
+        {
+            "message": "Missing item type\nExtend the picker with a component and defaults.",
+            "line": " materialize.js:5966"
+        },
+        {
+            "message": "Missing item type\nGlobals and constants",
+            "line": " materialize.js:6070"
+        },
+        {
+            "message": "Missing item type\nThe date picker constructor",
+            "line": " materialize.js:6079"
+        },
+        {
+            "message": "Missing item type\nSet a datepicker item object.",
+            "line": " materialize.js:6195"
+        },
+        {
+            "message": "Missing item type\nGet a datepicker item object.",
+            "line": " materialize.js:6239"
+        },
+        {
+            "message": "Missing item type\nCreate a picker date object.",
+            "line": " materialize.js:6247"
+        },
+        {
+            "message": "Missing item type\nCreate a range limit object using an array, date object,\nliteral “true”, or integer relative to another time.",
+            "line": " materialize.js:6298"
+        },
+        {
+            "message": "Missing item type\nCheck if a date unit falls within a date range object.",
+            "line": " materialize.js:6335"
+        },
+        {
+            "message": "Missing item type\nCheck if two date range objects overlap.",
+            "line": " materialize.js:6344"
+        },
+        {
+            "message": "Missing item type\nGet the date today.",
+            "line": " materialize.js:6360"
+        },
+        {
+            "message": "Missing item type\nNavigate to next/prev month.",
+            "line": " materialize.js:6372"
+        },
+        {
+            "message": "Missing item type\nNormalize a date by setting the hours to midnight.",
+            "line": " materialize.js:6429"
+        },
+        {
+            "message": "Missing item type\nMeasure the range of dates.",
+            "line": " materialize.js:6438"
+        },
+        {
+            "message": "Missing item type\nCreate a viewset object based on navigation.",
+            "line": " materialize.js:6464"
+        },
+        {
+            "message": "Missing item type\nValidate a date as enabled and shift if needed.",
+            "line": " materialize.js:6472"
+        },
+        {
+            "message": "Missing item type\nCheck if a date is disabled.",
+            "line": " materialize.js:6595"
+        },
+        {
+            "message": "Missing item type\nParse a string into a usable type.",
+            "line": " materialize.js:6637"
+        },
+        {
+            "message": "Missing item type\nVarious formats to display the object in.",
+            "line": " materialize.js:6686"
+        },
+        {
+            "message": "Missing item type\nCheck if two date units are the exact.",
+            "line": " materialize.js:6794"
+        },
+        {
+            "message": "Missing item type\nCheck if two date units overlap.",
+            "line": " materialize.js:6826"
+        },
+        {
+            "message": "Missing item type\nFlip the “enabled” state.",
+            "line": " materialize.js:6853"
+        },
+        {
+            "message": "Missing item type\nMark a collection of dates as “disabled”.",
+            "line": " materialize.js:6862"
+        },
+        {
+            "message": "Missing item type\nMark a collection of dates as “enabled”.",
+            "line": " materialize.js:6921"
+        },
+        {
+            "message": "Missing item type\nCreate a string for the nodes in the picker.",
+            "line": " materialize.js:7013"
+        },
+        {
+            "message": "Missing item type\nThe date picker defaults.",
+            "line": " materialize.js:7387"
+        },
+        {
+            "message": "Missing item type\nExtend the picker to add the date picker.",
+            "line": " materialize.js:7470"
+        },
+        {
+            "message": "Missing item type\nKtóry przycisk",
+            "line": " sl-material.js:21"
+        }
+    ]
+}

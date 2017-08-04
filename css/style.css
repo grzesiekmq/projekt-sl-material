@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
 body,
 #one .card,
 #one .card-reveal {
