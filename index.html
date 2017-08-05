@@ -8,70 +8,129 @@
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script src=".\lib\jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" href=".\css\style.css" type="text/css" />
-    <link rel="stylesheet" href=".\css\materialize.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css">
+    <link rel="stylesheet" type="text/css" href=".\css\dialog-polyfill.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- <link rel="stylesheet" href=".\css\materialize.css" type="text/css"> -->
+    <link rel="stylesheet" type="text/css" href=".\css\easy-autocomplete.min.css">
+    <script type="text/javascript" src=".\lib\jquery.easy-autocomplete.js"></script>
     <link rel="stylesheet" href=".\fonts\material.css" type="text/css">
-    <script src=".\lib\materialize.js"></script>
+    <!-- <script src=".\lib\materialize.js"></script> -->
     <script type="text/javascript" charset="utf-8" src=".\lib\sl-material.js"></script>
-    <script src=".\autocomplete.js"></script>
+    <script src=".\lib\autocomplete.js"></script>
 </head>
 
 <body>
     <!-- One -->
     <div id="one">
-        <header>
-            <div class="center">
-                <img src=".\img\shopping_list.png">
+        <!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+        <div class="mdl-layout mdl-js-layout">
+            <header>
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">Lista zakupów</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <img src=".\img\shopping_list.png" height="50" width="50">
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Lista zakupów</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="#one">Lista zakupów</a>
+                    <a class="mdl-navigation__link" href="#two">Historia</a>
+                    <a class="mdl-navigation__link" href="">profil Github</a>
+                </nav>
             </div>
-            <h2 class="t center-align">Lista zakupów</h2>
-    </div>
-    <nav>
-        <ul class="left">
-            <li><a href="#one">Lista zakupów</a></li>
-            <li><a href="#two">Historia</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main class="center-align">
-        <h4>Wprowadź produkt:</h4>
-        <nav>
-            <div class="nav-wrapper">
-                <form>
-                    <div class="input-field">
-                        <i class="material-icons prefix">search</i>
-                        <input type="search" id="produkt" required class="red lighten-1 autocomplete">
-                        <label class="label-icon" for="produkt">
-                            <i class="material-icons" onclick="whichBtn(this)" id="c">close</i>
-                    </div>
-                </form>
-            </div>
-        </nav>
-        <p></p>
-        <button type="button" onclick="whichBtn(this)" class="btn-floating btn-large waves-effect waves-light green" id="add">
-            <i class="material-icons">add</i>
-        </button>
-        <p></p>
-        <a href="#display" class="waves-effect waves-light btn modal-trigger" onclick="$('#display').modal('open');">Przejdź do listy zakupów</a>
-    </main>
-    </div>
-    <div id="display" class="modal">
-        <div class="modal-content">
-            <h4>Lista zakupów</h4>
-            <button type="button" onclick="whichBtn(this)" class="waves-effect waves-light btn deep-orange" id="rem"><i class="material-icons">delete</i>Usuń</button>
+            <main class="mdl-layout__content" align="center">
+                <div class="page-content">
+                    <h4 class="g">Wprowadź produkt:</h4>
+                    <nav>
+                        <form>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input autocomplete" type="text" id="produkt">
+                                <label class="mdl-textfield__label" for="produkt"><i class="material-icons">search</i><i class="material-icons" onclick="whichBtn(this)" id="c">close</i></label>
+                            </div>
+                        </form>
+                    </nav>
+                    <p></p>
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="whichBtn(this)" id="add">
+                        <i class="material-icons" id="a">add</i>
+                    </button>
+                    <p></p>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent show-modal">
+                        Przejdź do listy zakupów
+                    </button>
+                </div>
+            </main>
+        </div>
+        <!-- <main class="center-align">
+            <h4>Wprowadź produkt:</h4>
+            <nav>
+                <div class="nav-wrapper">
+                    <form>
+                        <div class="input-field">
+                            <i class="material-icons prefix">search</i>
+                            <input type="search" id="produkt" required class="red lighten-1 autocomplete">
+                            <label class="label-icon" for="produkt">
+                                <i class="material-icons" onclick="whichBtn(this)" id="c">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
             <p></p>
-            <button type="button" onclick="whichBtn(this)" id="load" class="waves-effect waves-light btn"><i class="material-icons">file_download</i>Wczytaj
+            <button type="button" onclick="whichBtn(this)" class="btn-floating btn-large waves-effect waves-light green" id="add">
+                <i class="material-icons">add</i>
+            </button>
+             
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                <i class="material-icons">add</i>
             </button>
             <p></p>
-            <button type="button" onclick="whichBtn(this)" id="load2" class="waves-effect waves-light btn"><i class="material-icons">file_download</i>Wczytaj (z dodatkowymi produktami)</button>
+            
+            <a href="#display" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            Przejdź do listy zakupów
+        </a>
+        </main> -->
+    </div>
+    <dialog class="mdl-dialog">
+        <div class="mdl-dialog__content">
+            <h4 class="t">Lista zakupów
+            <button type="button" class="mdl-button close">X</button></h4>
+            <div class="container" align="center">
+            <button type="button" onclick="whichBtn(this)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="rem"><i class="material-icons">delete</i>Usuń</button>
             <p></p>
-            <div id="list">Lista</div>
-            <div class="left-align" id="productHeading"><b>produkt</b></div>
+            <button type="button" onclick="whichBtn(this)" id="load" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons">file_download</i>Wczytaj
+            </button>
             <p></p>
-            <ul data-role="listview" data-inset="true" id="lv">
+            <button type="button" onclick="whichBtn(this)" id="load2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons">file_download</i>Wczytaj <br> (z dodatkowymi produktami)</button>
+            <p></p>
+        </div>
+            
+            <b>produkt</b>
+            <p></p>
+            <ul class="mdl-list" id="lv">
             </ul>
         </div>
-    </div>
+    </dialog>
+    <script src=".\lib\dialog-polyfill.js"></script>
+    <script>
+    var dialog = document.querySelector('dialog');
+    var showModalBtn = document.querySelector('.show-modal');
+
+    if (!dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+    }
+    showModalBtn.addEventListener('click', function() {
+        dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+        dialog.close();
+    });
+    </script>
     <!-- Two -->
-    <div id="two">
+    <!-- <div id="two">
         <header id="hdr2">
             <h1>Historia</h1>
             <nav>
@@ -104,29 +163,7 @@
                 <h5>© GF</h5>
             </div>
         </footer>
-    </div>
-    <!-- <div id="display" class="pg">
-    <header>
-        <a href="#one" id="a1"><i class="material-icons h">home</i></a>
-        <h2>Lista zakupów</h2>
-    </header>
-    <main align="center">
-        <div class="danger-zone">
-            <p><span class="material-icons">warning</span>Niebezpieczna strefa!</p>
-            <button type="button" onclick="whichBtn(this)" class="waves-effect waves-light btn deep-orange" id="rem"><i class="material-icons">delete</i>Usuń</button>
-            <p></p>
-        </div>
-        <button type="button" onclick="whichBtn(this)" id="load" class="waves-effect waves-light btn deep-blue"><i class="material-icons">file_download</i>Wczytaj dodane produkty</button>
-        <p></p>
-        <div id="list">Lista</div>
-        <div class="ui-grid-c">
-            <div class="ui-block-a" id="productHeading">produkt</div>
-        </div>
-        <p></p>
-        <ul data-role="listview" data-inset="true" id="lv">
-        </ul>
-    </main>
-</div> -->
+    </div> -->
 </body>
 
 </html>
