@@ -5,33 +5,60 @@
     src: url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-body,
-#one .card,
-#one .card-reveal {
-    background-color: #6eeee9
+body {
+    /*background-color: #3f51b5*/
 }
 
-.autocomplete-content.dropdown-content {
-    position: absolute;
-    z-index: 1
+.g {
+    color: #51b53f
+}
+
+
+
+#lvhistory, footer.mdl-mini-footer{position: relative;
+    top: 2em;}
+
+header,
+nav,
+.mdl-dialog, div.mdl-layout__drawer {
+    background: #51b53f
+}
+.primary{float: left;}
+.secondary{float: right;}
+
+footer.mdl-mini-footer{background: #2196f3;
+color: white;
+width: 100%
+}
+#two {
+    top: 40em;
+    position: relative;
+}
+
+.mdl-layout-title,
+.t, .mdl-layout__drawer .mdl-navigation a.mdl-navigation__link {
+    color: white
 }
 
 #c {
-    margin-left: 10em;
+    margin-left: 8em;
 }
 
-.t {
-    color: #01579b
-}
 
-.h {}
+
+#a {
+    font-size: 7em;
+    left: 12vh;
+}
 
 #add {
     background: mediumseagreen;
+    height: 12em;
+    width: 12em;
 }
 
 #load2 {
-    height: 5em
+    height: 8em
 }
 
 #rem,
@@ -64,6 +91,10 @@ body,
 
 #lv {
     background: ;
+}
+
+.mdl-list__item {
+    background: #47c431
 }
 
 .danger-zone {

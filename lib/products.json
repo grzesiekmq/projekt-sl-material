@@ -1,0 +1,31 @@
+[
+
+            {"name":"bekon", "img": "./img/bcn.png"},
+
+            {"name":"bułki", "img": "./img/bulki.jpg"},
+
+            {"name":"chipsy", "img": "./img/chipsy.jpg"},
+
+            {"name":"chleb", "img": "./img/chleb.png"},
+
+            {"name":"jaja", "img": "./img/jaja.jpg"},
+
+            {"name":"kawa", "img": "./img/kawa.jpg"},
+
+            {"name":"ketchup", "img": "./img/ketchup.jpg"},
+
+            {"name":"kiełbasa", "img": "./img/kielbasa.jpg"},
+
+            {"name":"masło", "img": "./img/maslo.jpg"},
+
+            {"name":"mleko", "img": "./img/mleko.jpg"},
+
+            {"name":"musztarda", "img": "./img/musztarda.jpeg"},
+
+            {"name":"piwo", "img": "./img/piwo.png"},
+
+            {"name":"płatki", "img": "./img/platki.jpg"},
+
+            {"name":"sos czosnkowy", "img": "./img/sos czosnkowy.jpg"}
+
+        ]
