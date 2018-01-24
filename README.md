@@ -1,2 +1,2 @@
 projekt-sl-material
-![alt text] (https://github.com/grzesiekmq/projekt-sl-material/blob/master/Screenshot.png)
+![alt text] (https://raw.githubusercontent.com/grzesiekmq/projekt-sl-material/master/Screenshot.png)
