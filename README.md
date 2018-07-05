@@ -1,4 +1,4 @@
-# Info: This app in AngularJS version - coming soon
+# Info: This app in NativeScript version - coming soon
 
 app code `sl-material.js` is in lib folder  
 to run this app just download and install on your Android device `ShoppingListMBA.apk` file  
